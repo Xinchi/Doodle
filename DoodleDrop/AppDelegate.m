@@ -9,7 +9,7 @@
 #import "cocos2d.h"
 
 #import "AppDelegate.h"
-#import "HelloWorldLayer.h"
+#import "GameScene.h"
 
 @implementation AppController
 
@@ -45,6 +45,7 @@
 
 	// for rotation and other messages
 	[director_ setDelegate:self];
+//    [director_ setDeviceOrientation:UIDeviceOrientationPortrait];
 
 	// 2D projection
 	[director_ setProjection:kCCDirectorProjection2D];
@@ -84,7 +85,7 @@
 	[CCTexture2D PVRImagesHavePremultipliedAlpha:YES];
 
 	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
-	[director_ pushScene: [HelloWorldLayer scene]]; 
+	[director_ pushScene: [GameScene scene]]; 
 
 	return YES;
 }
@@ -92,7 +93,8 @@
 // Supported orientations: Landscape. Customize it for your own needs
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return UIInterfaceOrientationIsLandscape(interfaceOrientation);
+	return UIInterfaceOrientationIsPortrait(interfaceOrientation);
+    
 }
 
 
