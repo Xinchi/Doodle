@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4329B8E9155DF1C0000D995C /* spider.png in Resources */ = {isa = PBXBuildFile; fileRef = 4329B8E8155DF1C0000D995C /* spider.png */; };
 		43AB22E1155BE3B4000F1EAE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AB22E0155BE3B4000F1EAE /* QuartzCore.framework */; };
 		43AB22E3155BE3B4000F1EAE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AB22E2155BE3B4000F1EAE /* OpenGLES.framework */; };
 		43AB22E5155BE3B4000F1EAE /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AB22E4155BE3B4000F1EAE /* OpenAL.framework */; };
@@ -133,6 +134,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4329B8E8155DF1C0000D995C /* spider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spider.png; sourceTree = "<group>"; };
 		43AB22DC155BE3B4000F1EAE /* DoodleDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoodleDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43AB22E0155BE3B4000F1EAE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		43AB22E2155BE3B4000F1EAE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -450,6 +452,8 @@
 			children = (
 				43AB2463155BE3B7000F1EAE /* AppDelegate.h */,
 				43AB2464155BE3B7000F1EAE /* AppDelegate.m */,
+				43AB246E155BE518000F1EAE /* GameScene.h */,
+				43AB246F155BE518000F1EAE /* GameScene.m */,
 				43AB22F3155BE3B4000F1EAE /* Resources */,
 				43AB230B155BE3B4000F1EAE /* libs */,
 				43AB245F155BE3B7000F1EAE /* Supporting Files */,
@@ -460,13 +464,12 @@
 		43AB22F3155BE3B4000F1EAE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4329B8E8155DF1C0000D995C /* spider.png */,
 				43AB2471155BEA62000F1EAE /* alien.png */,
 				43AB22F4155BE3B4000F1EAE /* Default.png */,
 				43AB22F6155BE3B4000F1EAE /* fps_images.png */,
 				43AB22F8155BE3B4000F1EAE /* fps_images-hd.png */,
 				43AB22FA155BE3B4000F1EAE /* fps_images-ipadhd.png */,
-				43AB246E155BE518000F1EAE /* GameScene.h */,
-				43AB246F155BE518000F1EAE /* GameScene.m */,
 				43AB22FC155BE3B4000F1EAE /* Icon-72.png */,
 				43AB22FE155BE3B4000F1EAE /* Icon-Small-50.png */,
 				43AB2300155BE3B4000F1EAE /* Icon-Small.png */,
@@ -883,6 +886,7 @@
 				43AB230A155BE3B4000F1EAE /* iTunesArtwork in Resources */,
 				43AB2443155BE3B6000F1EAE /* ChangeLog in Resources */,
 				43AB2472155BEA62000F1EAE /* alien.png in Resources */,
+				4329B8E9155DF1C0000D995C /* spider.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1097,6 +1101,7 @@
 				43AB246D155BE3B7000F1EAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
